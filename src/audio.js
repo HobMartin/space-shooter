@@ -1,14 +1,27 @@
+const sounds = {
+  newGame: "newgame.mp3",
+  boom1: "boom1.mp3",
+  boom2: "boom2.mp3",
+  boom3: "boom3.mp3",
+  boom4: "boom4.mp3",
+  slide: "slide.mp3",
+  win: "win.mp3",
+  lose: "lose.mp3",
+  scream: "scream.mp3",
+};
+const buildSoundSrc = (sound) => `./assets/sounds/${sound}`;
+
 export class AudioControl {
   constructor() {
-    this.newGame = new Audio("/sounds/newgame.mp3");
-    this.boom1 = new Audio("/sounds/boom1.mp3");
-    this.boom2 = new Audio("/sounds/boom2.mp3");
-    this.boom3 = new Audio("/sounds/boom3.mp3");
-    this.boom4 = new Audio("/sounds/boom4.mp3");
-    this.slide = new Audio("/sounds/slide.mp3");
-    this.win = new Audio("/sounds/win.mp3");
-    this.lose = new Audio("/sounds/lose.mp3");
-    this.scream = new Audio("/sounds/scream.mp3");
+    this.newGame = new Audio(buildSoundSrc(sounds.newGame));
+    this.boom1 = new Audio(buildSoundSrc(sounds.boom1));
+    this.boom2 = new Audio(buildSoundSrc(sounds.boom2));
+    this.boom3 = new Audio(buildSoundSrc(sounds.boom3));
+    this.boom4 = new Audio(buildSoundSrc(sounds.boom4));
+    this.slide = new Audio(buildSoundSrc(sounds.slide));
+    this.win = new Audio(buildSoundSrc(sounds.win));
+    this.lose = new Audio(buildSoundSrc(sounds.lose));
+    this.scream = new Audio(buildSoundSrc(sounds.scream));
 
     this.boomSounds = [this.boom1, this.boom2, this.boom3, this.boom4];
   }
