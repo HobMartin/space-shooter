@@ -9,7 +9,7 @@ const sounds = {
   lose: "lose.mp3",
   scream: "scream.mp3",
 };
-const buildSoundSrc = (sound) => `./assets/sounds/${sound}`;
+const buildSoundSrc = (sound) => `/sounds/${sound}`;
 
 export class AudioControl {
   constructor() {
