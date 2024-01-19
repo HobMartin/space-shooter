@@ -1,0 +1,13 @@
+{
+  "name": "space",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vite",
+    "build": "bunx --bun vite build"
+  },
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
+}
